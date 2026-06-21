@@ -1,0 +1,142 @@
+.regresar {
+    
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.espacio-inicio {
+    height: 100px; /* Ajusta el tamaño del espacio  */
+  }
+
+.title-container {
+    width: 80%;               /* El contenedor ocupa el 80% del ancho de la pantalla */
+    max-width: 600px;         /* Tamaño máximo del contenedor */
+    padding: 20px;            /* Padding alrededor del título */
+    background-color: #fff;  /* Fondo blanco */
+    box-sizing: border-box;  /* Asegura que el padding no afecte el tamaño total */
+    display: flex;
+    justify-content: center; /* Centra el título horizontalmente */
+    align-items: center;     /* Centra el título verticalmente */
+    text-align: center;      /* Centra el texto dentro del contenedor */
+    border-radius: 8px;      /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+
+.project-card {
+    width: 500;
+    height: auto;
+    background: #474747;
+    border-radius: 10px;
+    padding: 20px;
+    transition: 0.3s ease;
+}
+
+    
+.container {
+    width: 100%;               /* El contenedor ocupa el 80% del ancho de la pantalla */
+    max-width: 1200px;         /* Tamaño máximo del contenedor */
+    height: auto;             /* Altura automática para el contenedor */
+    background-color: #00000000;  /* Fondo blanco */
+    padding: 4px;            /* Padding alrededor de la imagen */
+    box-sizing: border-box;  /* Asegura que el padding no se desborde */
+    display: flex;
+    justify-content: center; /* Centra la imagen horizontalmente */
+    align-items: center;     /* Centra la imagen verticalmente */
+    border-radius: 2px;      /* Bordes redondeados para el contenedor */
+   /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    margin-bottom: 30px; /* Márgenes entre contenedores */
+}
+
+.responsive-image {
+    max-width: 100%;    /* La imagen no se desbordará más allá del contenedor */
+    height: auto;       /* Mantiene las proporciones de la imagen */
+}
+
+
+/* Estilo del contenedor */
+.image-container {
+    width: 100%; /* El contenedor ocupa todo el ancho disponible */
+    height: auto; /* Puedes ajustar la altura como desees */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Oculta cualquier parte de la imagen que sobresalga */
+  }
+
+.image-container img {
+    width: 100%; /* La imagen ocupa el 100% del ancho del contenedor */
+    height: 100%; /* La imagen ocupa el 100% de la altura del contenedor */
+    object-fit: cover; /* Asegura que la imagen cubra todo el espacio sin distorsionarse */
+  }
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center; /* Centra el contenido horizontalmente */
+    margin: 0;
+    padding: 0;
+   /*DESBORDA ---->  height: 100vh; /* Asegura que el contenido esté centrado verticalmente */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, green, #00cc99);
+}
+
+/* Estilos para el título */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px; /* Espacio debajo del título */
+    display: inline-block; /* Hace que la línea esté alineada con el texto */
+    border-bottom: 3px solid white; /* Línea blanca debajo del título */
+    padding-bottom: 10px; /* Espacio entre el texto y la línea */
+}
+
+/* Estilos para la imagen */
+img {
+    max-width: 100%; /* Limita el tamaño de la imagen al 90% del ancho de la ventana */
+    height: auto; /* Mantiene las proporciones de la imagen */
+    border-radius: 8px; /* Bordes redondeados */
+    margin-bottom: 20px; /* Espacio debajo de la imagen */
+    border: 5px solid black; /* Marco negro alrededor de la imagen */
+}
+
+/* Estilos para el párrafo */
+p {
+    font-size: 1.2em;
+    color: #ffffff;
+    max-width: 80%; /* Limita el ancho del párrafo */
+    line-height: 1.6;
+}
+
+
+.cuadrado {
+    width: 100px; /* Aquí defines el tamaño */
+    height: 100px; /* Aquí defines el tamaño */
+    background-color: #3498db; /* Aquí defines el color */
+}
+
+video {
+    width: 50%;  /* El ancho será siempre el 100% del contenedor */
+    height: auto; /* La altura se ajustará proporcionalmente */
+    max-width: 100%;  /* Asegura que no se exceda el tamaño del contenedor */
+}
+
+.button-container {
+    text-align: center;
+    width: 80%; /* 80% del ancho disponible */
+    max-width: 500px; /* Limitar el ancho máximo */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+    .responsive-button {
+        width: 100%; /* El botón ocupará todo el ancho disponible en pantallas pequeñas */
+    }
+}

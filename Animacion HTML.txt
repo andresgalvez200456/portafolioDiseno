@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    /* Estilos para el contenedor de las imágenes */
+    #image-animation {
+      width: 900px; /* Ancho del contenedor */
+      height: 600px; /* Alto del contenedor */
+      border: 2px solid #000; /* Borde alrededor del contenedor */
+      overflow: hidden; /* Oculta cualquier parte de la imagen que se desborde */
+      position: relative;
+    }
+
+    /* Animación para cambiar entre imágenes */
+    @keyframes imageSlider {
+      0% {
+        background-image: url('images/p1.png');
+      }
+      50% {
+        background-image: url('images/p2.png');
+      }
+      100% {
+        background-image: url('images/p1.png');
+      }
+    }
+
+    /* Aplica la animación al contenedor */
+    #image-animation {
+      animation: imageSlider 0.2s infinite; /* 4s es el tiempo de duración para una vuelta completa */
+      background-size: cover; /* Hace que la imagen cubra todo el contenedor */
+      background-position: center; /* Centra la imagen */
+    }
+  </style>
+<body>
+    
+    <div id="image-animation"></div>
+
+
+</body>
+</html>
